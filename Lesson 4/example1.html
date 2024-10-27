@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                border: 1px solid grey;
+            }
+            #BlockElement{
+                width: 500px;
+                height: 200px;
+                margin: 25px;
+                padding: 50px;
+            }
+            /*Block element: each element is in new line and we can customize width/height/margin/padding*/
+            /*h1{
+                text-align: center;
+            }*/
+            span{
+                width: 500px;
+                height: 200px;
+                margin: 25px;
+                padding: 50px;
+                display: block;
+            }
+            .box{
+                width: 500px;
+                height: 200px;
+                margin: 25px;
+                padding: 50px;
+                box-sizing: border-box;
+                /*border-box helps to set a fixed width or height, and everything stays within that size.*/
+            }
+
+            #InlineBlock{
+                width: 5px;
+                height: 2px;
+                margin: 1px;
+                padding: 1px;
+                display: inline;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="BlockElement">
+            <h1>
+                Apple 
+            </h1>
+            <h2>
+                About us
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus facere tempore reiciendis pariatur in modi earum, 
+                quasi animi molestiae maiores voluptatem tenetur architecto, 
+                consequatur ratione nostrum?
+            </p>
+        </div>
+
+        <div id="InlineElement">
+            <span>
+                MAC Pro Max
+            </span>
+            <span>
+                MAC IOS 12 INC
+            </span>
+        </div>
+
+
+        <div id="BoxSizing">
+            <h1 class="box">
+                Explore our new product
+            </h1>
+            <p class="box">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus facere tempore reiciendis pariatur in modi earum, 
+                quasi animi molestiae maiores voluptatem tenetur architecto, 
+                consequatur ratione nostrum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus facere tempore reiciendis pariatur in modi earum, 
+                quasi animi molestiae maiores voluptatem tenetur architecto, 
+                consequatur ratione nostrum?
+            </p>
+        </div>
+
+        <div id="InlineBlock">
+            <p>
+                About us
+            </p>
+            <p>
+                Contact Us
+            </p>
+            <p>
+                Help Center
+            </p>
+        </div>
+
+        
+
+        
+    </body>
+</html>
