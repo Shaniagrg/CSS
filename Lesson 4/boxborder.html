@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Sizing</title>
+        <style>
+             *{
+                margin: 0;
+                padding: 0;
+                border: 1px solid grey;
+            }
+            #borderbox{
+                width: 500px;
+                height: 200px;
+                margin: 25px;
+                padding: 50px;
+                box-sizing: border-box;
+                /*border-box helps to set a fixed width or height, and everything stays within that size.*/
+            }
+            #contentbox{
+                width: 500px;
+                height: 200px;
+                margin: 25px;
+                padding: 50px;
+                box-sizing: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p id="borderbox">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus facere tempore reiciendis pariatur in modi earum, 
+                quasi animi molestiae maiores voluptatem tenetur architecto, 
+                consequatur ratione nostrum?
+            </p>
+            <p id="borderbox">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus facere tempore reiciendis pariatur in modi earum, 
+                quasi animi molestiae maiores voluptatem tenetur architecto, 
+                consequatur ratione nostrum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus facere tempore reiciendis pariatur in modi earum, 
+                quasi animi molestiae maiores voluptatem tenetur architecto, 
+                consequatur ratione nostrum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus fac
+            </p>
+        </div>
+
+            <div id="contentbox">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus facere tempore reiciendis pariatur in modi earum, 
+                quasi animi molestiae maiores voluptatem tenetur architecto, 
+                consequatur ratione nostrum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus facere tempore reiciendis pariatur in modi earum, 
+                quasi animi molestiae maiores voluptatem tenetur architecto, 
+                consequatur ratione nostrum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta 
+                quod ad accusamus facere tempore reiciendis pariatur in modi earum, 
+                quasi animi molestiae maiores voluptatem tenetur architecto, 
+                consequatur ratione nostrum?
+            </p>
+        </div>
+    </body>
+</html>
