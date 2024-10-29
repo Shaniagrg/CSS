@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .box{
+                border: 2px solid red;
+                width: 50%;
+            }
+            .parent{
+                border: 1px solid black;
+                background-color: grey;
+                width: 50%;
+            }
+            .child{
+                border: 1px solid rgb(11, 47, 72);
+                background-color: lightskyblue;
+                width: 30%;
+            }
+            .container{
+                border: 1px solid green;
+                background-color: beige;
+                height: 100vh;
+                width: 50vw;
+            }
+            .box1{
+                border: 1px solid black;
+                font-size: 100px;
+            }
+            .conta{
+                font-size: 10px;
+            }
+            .box2{
+                font-size: 10em;
+
+            }
+            .firstpara{
+                border: 1px solid black;
+                font-size: 5rem;
+            }
+             
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            Welcome to CodeHelp
+        </div> 
+        <!--width is 50% of what?
+            ans: It the 50% of the parent container which is div for class box-->
+
+        <div class="parent">
+            <div class="child">
+                Child
+            </div>
+        </div>
+
+        <div class="container">
+            Welcome to CodeHelp
+        </div>
+
+        <div class="box1">
+            Love Babbar
+        </div>
+
+        <p class="firstpara">
+            Hello Jee
+        </p>
+        <div class="conta">
+            <div class="box2">
+                Welcome to CodeHelp
+            </div>
+        </div> 
+    </body>
+</html>
