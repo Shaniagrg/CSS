@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                width: 400px;
+                height: 400px;
+                background-color: beige;
+                border: 2px solid black;
+
+                /* transition-property: all;
+                transition-duration: 4s;
+                transition-delay: 1s;
+                transition-timing-function: linear; */
+
+                /* transition: all 2s ease-in-out 1s; */
+
+                transition: width 2s, height 5s;
+
+            }
+            .container:hover{
+                width: 1000px;
+                height: 700px;
+                /*width allows the box to expand by 1000px on the given transition timing above*/
+                background-color: blue;
+                /*color will change as you hover and expands*/
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+        </div>
+    </body>
+</html>
