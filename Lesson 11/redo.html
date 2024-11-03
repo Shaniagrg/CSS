@@ -24,23 +24,7 @@
                 border-radius: 10px;
                 margin: 10px;
                 position: relative;
-                /* animation-name: rightmovement;
-                animation-duration: 5s; */
-                /*how long do you want the animation to be*/
-                /* animation-iteration-count: infinite; */
-                /*how many times do you want the to be 1 2 or infinite*/
-                /* animation-delay: 1s; */
-                /*how much do you want to wait until the animation starts*/
-                /* animation-timing-function: linear; */
-                /* animation-direction: alternate; */
-                /*alternate: the direction flow back and forth normally and many 
-                more option but if ther's no alternate it will have a little glitch 
-                like stops before it starts another animation*/
-                /* animation-fill-mode: none; */
-                /*forwards let the animation stop at right end, backward let the animation stop on left end*/
-                /* animation-play-state: running; */
                 animation: 5s linear 1s infinite alternate none running rightmovement;
-                /*@keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
             }
             @keyframes rightmovement {
                 from{
@@ -56,7 +40,7 @@
             #box2{
                 width: 350px;
                 height: 80px;
-                background-color: purple;
+                background-color: blue;
                 border: 3px solid yellow;
                 border-radius: 10px;
                 margin: 10px;
@@ -65,12 +49,44 @@
             }
             @keyframes leftmovement {
                 from{
-                    top: 0;
+                    top: 520px;
                     left: 470px;
                 }
                 to{
-                    top: 0;
+                    top: 520px;
                     left: 0;
+                }
+            }
+            #circle{
+                width: 80px;
+                height: 80px;
+                background-color: blue;
+                border: 3px solid yellow;
+                border-radius: 100px;
+                margin: 10px;
+                position: relative;
+                top: 100px;
+                left: 400px;
+                animation: 2s ease-in-out 0s infinite alternate-reverse none running circlemovement; 
+            }
+            @keyframes circlemovement {
+                0{
+                    top: 1%;
+                    left: 5%;
+                }
+
+                30%{ 
+                    top: 5%;
+                    left: 9%;
+                }
+                }
+                60%{
+                    top: 90%;
+                    left: 10%;
+                }
+                100%{
+                    top: 95%;
+                    left: 4%;
                 }
             }
         </style>
@@ -81,6 +97,9 @@
             
             </div>
             <div id="box2">
+            </div>
+            <div id="circle">
+
             </div>
         </div>
     </body>
