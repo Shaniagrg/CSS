@@ -1,0 +1,44 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    transition: all 3s linear 1s;
+}
+
+.box:hover{
+    /* transform: rotate(45deg); */
+    /* transform: scale(2); */
+    /* transform: scale(0.5);
+    transform: rotate(-45deg); */
+    /* transform: skew(45deg); */
+    
+    transform: translate(500px, 500px);
+    /* allows you to move on the right side down */
+}
+
+p{
+    font-size: 36px;
+}
+/*
+rotate: rotates the item in the given degree
+-ve rotate: rotates anticlock wise
+scale: used to increase or decrease the size
+skew: tilts the item
+translate: x-axis, yaxis
+           +x-axis: moves to rigth and -ve moves to left
+           +y-axis moves down and -ve moves upward */
